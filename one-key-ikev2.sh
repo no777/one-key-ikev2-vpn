@@ -56,7 +56,7 @@ fi
 
 # Ubuntu or CentOS
 function get_system(){
-	get_system_str=`cat /etc/issue`
+	get_system_str=`cat /etc/redhat-release`
 	echo "$get_system_str" |grep -q "CentOS"
 	if  [ $? -eq 0 ]
 	then
